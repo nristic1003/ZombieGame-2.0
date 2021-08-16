@@ -15,6 +15,7 @@ TagManager:
   - placeForHead
   - Ladder
   - newBullets
+  - Platform
   layers:
   - Default
   - TransparentFX

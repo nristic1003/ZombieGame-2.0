@@ -12,6 +12,11 @@ public class CameraFollow : MonoBehaviour
 
     private float minX = 0.30f;
 
+    public float smoothSpeed = 0f;
+
+    public Vector3 offset; 
+    
+
 
     // Start is called before the first frame update
     void Awake()
@@ -22,15 +27,23 @@ public class CameraFollow : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        if (!player)
+
+        Vector3 desiredPosition = player.position + offset;
+        // Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
+
+
+        transform.position = desiredPosition;
+       /* if (!player)
             return;
 
         temp = transform.position;
         transform.position = new Vector3(temp.x, player.position.y + 2.5f, temp.z);
         if (player.position.x > minX)
         {
+       
             transform.position = new Vector3(player.position.x,transform.position.y, temp.z);
-        }
+        }*/
+        
        
     }
 }

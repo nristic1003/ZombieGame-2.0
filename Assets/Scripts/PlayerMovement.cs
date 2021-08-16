@@ -56,6 +56,16 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    public void bouncePlayer(float jumpForce)
+    {
+
+        myBody.velocity = new Vector2(0, jumpForce);
+        anim.SetBool("isJumping", true);
+        anim.SetBool("goingUp", false);
+        
+
+    }
+
     private void OnCollisionEnter2D(Collision2D target)
     {
         if (target.gameObject.tag == "Ground")

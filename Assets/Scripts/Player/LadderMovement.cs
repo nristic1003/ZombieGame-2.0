@@ -35,15 +35,11 @@ public class LadderMovement : MonoBehaviour
     {
         if(isClimbing)
         {
-            if(vertical ==1)
+            if(vertical ==1 || vertical ==-1)
             {
                 anim.speed = 1f;
                 anim.SetBool("goingUp", true);
                 
-            }else if(vertical ==-1)
-            {
-                anim.speed = 1f;
-                anim.SetBool("goingDown", true);
             }else
             {
                 anim.speed = 0f;
@@ -55,7 +51,7 @@ public class LadderMovement : MonoBehaviour
         {
             anim.speed = 1f;
             anim.SetBool("goingUp", false);
-            anim.SetBool("goingDown", false);
+          //  anim.SetBool("goingDown", false);
             myBody.gravityScale = 3f;
         }
     }
