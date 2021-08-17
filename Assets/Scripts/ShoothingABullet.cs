@@ -43,6 +43,13 @@ public class ShoothingABullet : MonoBehaviour
             Destroy(gameObject);
          
         }
+
+        if (collision.tag == "Player")
+        {
+            GameObject.Find(collision.gameObject.name).GetComponent<Player>().TakeDamage(10);
+            Destroy(gameObject);
+
+        }
         if (collision.tag == "Collector")
         {
             Destroy(gameObject);

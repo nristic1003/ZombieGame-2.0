@@ -89,7 +89,12 @@ public class GameController : MonoBehaviour
 
     public void jump()
     {
-        GameObject.Find("Player").GetComponent<PlayerWalk>().checkJumping();
+        GameObject.Find("Player").GetComponent<PlayerMovement>().checkJumping();
+    }
+
+    public void startClimbing()
+    {
+        GameObject.Find("Player").GetComponent<LadderMovement>().startClimbing();
     }
 
 

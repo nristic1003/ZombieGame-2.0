@@ -4,11 +4,13 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 public class JoystickMoving : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 {
-	private PlayerWalk player;
+	private PlayerMovement player;
+	private LadderMovement ladder;
 
 	void Start()
 	{
-		player = GameObject.Find("Player").GetComponent<PlayerWalk>();
+		player = GameObject.Find("Player").GetComponent<PlayerMovement>();
+		ladder = GameObject.Find("Player").GetComponent<LadderMovement>();
 	}
 
 	public void OnPointerDown(PointerEventData data)
@@ -17,14 +19,23 @@ public class JoystickMoving : MonoBehaviour, IPointerUpHandler, IPointerDownHand
 		{
 			player.setDirrection(true);
 		}
-		else
+		else if(gameObject.name=="Right")
 		{
 			player.setDirrection(false);
+		}
+		else if (gameObject.name == "UpButton")
+		{
+			ladder.setDirrection(true);
+		}
+		else
+		{
+			ladder.setDirrection(false);
 		}
 	}
 
 	public void OnPointerUp(PointerEventData data)
 	{
 		player.clearMovong();
+		ladder.clearMovong();
 	}
 }

@@ -1,0 +1,612 @@
+fileFormatVersion: 2
+guid: fe6bb863c08d074448bd09ad02e7b9ef
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4241925936741133306
+    second: PlayButton
+  - first:
+      213: 2836158295178171973
+    second: PauseButton
+  - first:
+      213: 1694643972777359670
+    second: "\u2014Pngtree\u2014game button set red cirlce_6056873_2"
+  - first:
+      213: -8140579170186784845
+    second: "\u2014Pngtree\u2014game button set red cirlce_6056873_3"
+  - first:
+      213: -1320691612750106599
+    second: "\u2014Pngtree\u2014game button set red cirlce_6056873_4"
+  - first:
+      213: -2084193234747950425
+    second: "\u2014Pngtree\u2014game button set red cirlce_6056873_5"
+  - first:
+      213: 7682348374273228460
+    second: "\u2014Pngtree\u2014game button set red cirlce_6056873_6"
+  - first:
+      213: 2198846481573656070
+    second: "\u2014Pngtree\u2014game button set red cirlce_6056873_7"
+  - first:
+      213: 8690913716699092227
+    second: LeftButton
+  - first:
+      213: 4131452369908443202
+    second: RightButton
+  - first:
+      213: -809573360549705863
+    second: UpButton
+  - first:
+      213: -6019291758863833254
+    second: DownButton
+  - first:
+      213: 3018921140779188276
+    second: "\u2014Pngtree\u2014game button set red cirlce_6056873_12"
+  - first:
+      213: 572479547103229972
+    second: "\u2014Pngtree\u2014game button set red cirlce_6056873_13"
+  - first:
+      213: 5927913907757209328
+    second: "\u2014Pngtree\u2014game button set red cirlce_6056873_14"
+  - first:
+      213: -7840076691819678122
+    second: "\u2014Pngtree\u2014game button set red cirlce_6056873_15"
+  - first:
+      213: -909820587725717513
+    second: "\u2014Pngtree\u2014game button set red cirlce_6056873_16"
+  - first:
+      213: -4578826899624859932
+    second: "\u2014Pngtree\u2014game button set red cirlce_6056873_17"
+  - first:
+      213: 8168666666777748612
+    second: "\u2014Pngtree\u2014game button set red cirlce_6056873_18"
+  - first:
+      213: 6025253194947417079
+    second: "\u2014Pngtree\u2014game button set red cirlce_6056873_19"
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayButton
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 972
+        width: 184
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afba8fe2a295eda30800000000000000
+      internalID: 4241925936741133306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PauseButton
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 972
+        width: 183
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5465fde51fe0c5720800000000000000
+      internalID: 2836158295178171973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014game button set red cirlce_6056873_2"
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 972
+        width: 183
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639b622f6b5948710800000000000000
+      internalID: 1694643972777359670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014game button set red cirlce_6056873_3"
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 972
+        width: 183
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf8217106ad60f80800000000000000
+      internalID: -8140579170186784845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014game button set red cirlce_6056873_4"
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 737
+        width: 184
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 910313cb9f5fbade0800000000000000
+      internalID: -1320691612750106599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014game button set red cirlce_6056873_5"
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 737
+        width: 185
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aa7397ab457313e0800000000000000
+      internalID: -2084193234747950425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014game button set red cirlce_6056873_6"
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 737
+        width: 183
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caefa51c42f2d9a60800000000000000
+      internalID: 7682348374273228460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014game button set red cirlce_6056873_7"
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 737
+        width: 184
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 606b0d9993fd38e10800000000000000
+      internalID: 2198846481573656070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeftButton
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 503
+        width: 184
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3055b699af35c9870800000000000000
+      internalID: 8690913716699092227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RightButton
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 503
+        width: 185
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 248a6d28a0ed55930800000000000000
+      internalID: 4131452369908443202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UpButton
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 503
+        width: 183
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 977c0d06151d3c4f0800000000000000
+      internalID: -809573360549705863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DownButton
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 503
+        width: 183
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a572c71790e277ca0800000000000000
+      internalID: -6019291758863833254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014game button set red cirlce_6056873_12"
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 268
+        width: 184
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4308f0958cc55e920800000000000000
+      internalID: 3018921140779188276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014game button set red cirlce_6056873_13"
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 268
+        width: 183
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 418b34e6d1bd1f700800000000000000
+      internalID: 572479547103229972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014game button set red cirlce_6056873_14"
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 268
+        width: 183
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f657faaa4e244250800000000000000
+      internalID: 5927913907757209328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014game button set red cirlce_6056873_15"
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 268
+        width: 183
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656b44c89c3723390800000000000000
+      internalID: -7840076691819678122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014game button set red cirlce_6056873_16"
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 34
+        width: 184
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ff7543fefaaf53f0800000000000000
+      internalID: -909820587725717513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014game button set red cirlce_6056873_17"
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 34
+        width: 185
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e66bd7c13db470c0800000000000000
+      internalID: -4578826899624859932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014game button set red cirlce_6056873_18"
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 34
+        width: 183
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 484acd1dd0fec5170800000000000000
+      internalID: 8168666666777748612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014game button set red cirlce_6056873_19"
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 34
+        width: 183
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f3d0ae8bdffd9350800000000000000
+      internalID: 6025253194947417079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

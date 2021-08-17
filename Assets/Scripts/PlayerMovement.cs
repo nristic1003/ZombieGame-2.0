@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -23,6 +24,9 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask whatIsLadder;
     public float distance;
     private bool isClimbing;
+    private bool left, right;
+
+    private bool jumpRequest = false;
 
     void Awake()
     {
@@ -32,10 +36,13 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         horizontalMove =  Input.GetAxisRaw("Horizontal") *runSpeed;
-       // verticalMove =Input.GetAxisRaw("Vertical") * climbingSpeed;
+        if (left)
+            horizontalMove = -1f * runSpeed;
+        else if (right) horizontalMove = 1f * runSpeed;
+        else horizontalMove = 0f * runSpeed;
+        // verticalMove =Input.GetAxisRaw("Vertical") * climbingSpeed;
         anim.SetFloat("speed", Mathf.Abs(horizontalMove));
-        if(Input.GetButtonDown("Jump"))
+        if(jumpRequest)
         {
             jump = true;
             anim.SetBool("isJumping", true);
@@ -43,7 +50,19 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-   public void OnLanding()
+    public void setDirrection(bool v)
+    {
+        left = v;
+        right = !v;
+    }
+
+    public void clearMovong()
+    {
+        left = right = false;
+    }
+
+
+    public void OnLanding()
     {
       //  anim.SetBool("isJumping", false);
     } 
@@ -53,6 +72,7 @@ public class PlayerMovement : MonoBehaviour
         //Move our character
         controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
         jump = false;
+        jumpRequest = false;
 
     }
 
@@ -81,6 +101,12 @@ public class PlayerMovement : MonoBehaviour
         }
 
     }
+
+    public void checkJumping()
+    {
+        jumpRequest = true;
+    }
+
     private void OnCollisionExit2D(Collision2D target)
     {
         if (target.gameObject.CompareTag("Platform"))
