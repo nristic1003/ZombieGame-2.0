@@ -72,15 +72,24 @@ public class PlayerMovement : MonoBehaviour
         {
             anim.SetBool("isJumping", false);
         }
-    }
-/*    private void OnCollisionExit2D(Collision2D target)
-    {
-        if (target.gameObject.tag == "Ground")
+
+
+        if(target.gameObject.CompareTag("Platform"))
         {
-            grounded = false;
+            anim.SetBool("isJumping", false);
+            this.transform.parent = target.transform;
+        }
+
+    }
+    private void OnCollisionExit2D(Collision2D target)
+    {
+        if (target.gameObject.CompareTag("Platform"))
+        {
+            anim.SetBool("isJumping", true);
+            this.transform.parent = null;
         }
     }
-*/
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Spikes")

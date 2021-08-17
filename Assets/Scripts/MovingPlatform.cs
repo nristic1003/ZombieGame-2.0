@@ -7,35 +7,40 @@ public class MovingPlatform : MonoBehaviour
     // Start is called before the first frame update
 
 
-    public Transform posStart, posEnd;
+    public Transform pos1, pos2;
     public float speed;
+    public Transform startPos;
     private bool moveRight;
+    public bool moveUpDown;
 
     Vector3 nextPos;
 
 
     void Start()
     {
-        nextPos = posStart.position;
+        nextPos = startPos.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(transform.position.x <= posStart.position.x)
+        if(transform.position.x <= pos1.position.x)
         {
-            moveRight = true;
+            nextPos = pos2.position;
 
         }
-        else if(transform.position.x >= posEnd.position.x)
+        if(transform.position.x >= pos2.position.x)
         {
-            moveRight = false;
+            nextPos = pos1.position;
         }
-        if(moveRight)
-         transform.position = new Vector2(transform.position.x + speed * Time.deltaTime, transform.position.y);
-        else
-            transform.position = new Vector2(transform.position.x - speed * Time.deltaTime, transform.position.y);
 
+        transform.position = Vector3.MoveTowards(transform.position, new Vector3(nextPos.x, nextPos.y, 0) , speed * Time.deltaTime);
+
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawLine(pos1.position, pos2.position);
     }
 
 
