@@ -58,8 +58,16 @@ public class PlayerAttack : MonoBehaviour
                 anim.SetBool("shoot", true);
                 source.clip = shoothing;
                 source.Play();
-                ShoothingABullet clone =  Instantiate(bullet, new Vector3(transform.position.x +1f , transform.position.y - 0.35f, 0),Quaternion.identity);
-                clone.dirrection = transform.localScale.x;
+                if(transform.localScale.x ==1)
+                {
+                    ShoothingABullet clone = Instantiate(bullet, new Vector3(transform.position.x + 1f, transform.position.y - 0.35f, 0), Quaternion.identity);
+                    clone.dirrection = transform.localScale.x;
+                }else
+                {
+                    ShoothingABullet clone = Instantiate(bullet, new Vector3(transform.position.x - 1f, transform.position.y - 0.35f, 0), Quaternion.identity);
+                    clone.dirrection = transform.localScale.x;
+                }
+                    
                 
             }
             else

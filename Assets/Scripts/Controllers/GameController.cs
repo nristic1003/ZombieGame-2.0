@@ -49,6 +49,11 @@ public class GameController : MonoBehaviour
         pausePanel.SetActive(false);
 
     }
+
+    public void FinishTheGame()
+    {
+        Debug.Log("Level Won");
+    }
     public void ToMainMenu()
     {
         Time.timeScale = 1f;

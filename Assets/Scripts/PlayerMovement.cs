@@ -139,6 +139,11 @@ public class PlayerMovement : MonoBehaviour
         {
             canGoUp = true;
         }
+
+        if(collision.tag=="FinishTag")
+        {
+            GameController.gameManager.FinishTheGame();
+        }
     }
 /*    private void OnTriggerExit2D(Collider2D collision)
     {

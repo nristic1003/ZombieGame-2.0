@@ -16,6 +16,7 @@ TagManager:
   - Ladder
   - newBullets
   - Platform
+  - FinishTag
   layers:
   - Default
   - TransparentFX

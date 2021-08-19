@@ -363,7 +363,7 @@ MonoBehaviour:
   health: 3
   effect: {fileID: 3200528606768861145, guid: 86570604ae1cc344ab5a121b5cc5960d, type: 3}
   enemyHit: {fileID: 3200528606768861145, guid: 761c5ee81ba0fcc4ab6334aad061c51f, type: 3}
-  coin: {fileID: 910853228779345654, guid: b9227d2432de4e84e8ceea510f988d7b, type: 3}
+  coin: {fileID: 2266017383313201443, guid: fd5c383cb394fbd41ad829b66f8336fa, type: 3}
   newBullets: {fileID: 868569544315568935, guid: b10a408759389404a85b852c3dfe79cc, type: 3}
   clip: {fileID: 8300000, guid: 517cb4111b60bc444813bbc62a479e05, type: 3}
 --- !u!82 &1250059498
