@@ -21,6 +21,8 @@ public class GameController : MonoBehaviour
 
     private int health = 100;
 
+    public GameObject levelComplete;
+
 
 
      void Awake()
@@ -52,7 +54,7 @@ public class GameController : MonoBehaviour
 
     public void FinishTheGame()
     {
-        Debug.Log("Level Won");
+        levelComplete.SetActive(true);
     }
     public void ToMainMenu()
     {

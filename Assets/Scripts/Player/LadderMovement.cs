@@ -73,6 +73,7 @@ public class LadderMovement : MonoBehaviour
                 
             }else
             {
+                
                 anim.speed = 0f;
                 vertical = 0f;
             }
