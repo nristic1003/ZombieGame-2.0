@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
     [SerializeField]
-    private GameObject pausePanel;
+    private GameObject pausePanel, gameOverPanel;
 
     public static GameController gameManager;
 
@@ -35,7 +35,6 @@ public class GameController : MonoBehaviour
     public void PauseTheGame()
     {
         Time.timeScale = 0f;
-        pausePanelText.text = "Pause";
         pausePanel.SetActive(true);
     } 
     public void ContinueTheGmae()
@@ -46,8 +45,7 @@ public class GameController : MonoBehaviour
     public void RestartTheGame()
     {
         Time.timeScale = 1;
-      
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         pausePanel.SetActive(false);
 
     }
@@ -65,8 +63,7 @@ public class GameController : MonoBehaviour
     public void GameOver()
     {
         Time.timeScale = 0f;
-        pausePanelText.text = "Game Over";
-        pausePanel.SetActive(true);
+        gameOverPanel.SetActive(true);
     }
 
     public void setScore(int count)

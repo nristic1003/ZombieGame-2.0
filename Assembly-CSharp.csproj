@@ -78,6 +78,7 @@
     <Compile Include="Assets\Scripts\Controllers\GameController.cs" />
     <Compile Include="Assets\Scripts\Player\WithParts\PlayerParts.cs" />
     <Compile Include="Assets\Scripts\Gun.cs" />
+    <Compile Include="Assets\Scripts\LevelComplete.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerWalk.cs" />
     <Compile Include="Assets\Scripts\JumpingSpring.cs" />
     <Compile Include="Assets\Scripts\TeleportTrigger.cs" />
@@ -85,7 +86,7 @@
     <Compile Include="Assets\Scripts\Collector.cs" />
     <Compile Include="Assets\Scripts\Ladder\LadderScript.cs" />
     <Compile Include="Assets\Scripts\MovingPlatform.cs" />
-    <Compile Include="Assets\Scripts\LevelComplete.cs" />
+    <Compile Include="Assets\Scripts\Health.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Kenney\Particle samples\License.txt" />
