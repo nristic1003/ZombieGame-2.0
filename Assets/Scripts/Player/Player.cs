@@ -20,14 +20,19 @@ public class Player : MonoBehaviour
     {
         if(health <= 0) 
         { 
+
             Destroy(gameObject);
+            GameController.gameManager.GameOver();
         }
     }
 
 
     public void TakeDamage(int damage)
     {
-        health -= damage;
+
+        if (health - damage <= 0) health = 0;
+        else
+            health -= damage;
         GameController.gameManager.setHealth(health);
     }
 

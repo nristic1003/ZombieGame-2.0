@@ -64,6 +64,8 @@ public class GameController : MonoBehaviour
     {
         Time.timeScale = 0f;
         gameOverPanel.SetActive(true);
+        GameObject.Find("Pause Button").SetActive(false);
+        pausePanel.SetActive(false);
     }
 
     public void setScore(int count)

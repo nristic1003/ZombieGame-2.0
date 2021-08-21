@@ -3,7 +3,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using EZCameraShake;
 
 public class Enemy : MonoBehaviour
 {
@@ -36,7 +36,7 @@ public class Enemy : MonoBehaviour
             Instantiate(coin, transform.position, Quaternion.identity);
             GameController.gameManager.setScore(1);
             Destroy(gameObject);
-          //  CameraShaker.Instance.ShakeOnce(4f, 4f, 0.1f, 1f);
+            CameraShaker.Instance.ShakeOnce(4f, 4f, 0.1f, 1f);
 
         }
 

@@ -80,16 +80,24 @@
     <Compile Include="Assets\Scripts\Gun.cs" />
     <Compile Include="Assets\Scripts\LevelComplete.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerWalk.cs" />
+    <Compile Include="Assets\Scripts\Health.cs" />
     <Compile Include="Assets\Scripts\JumpingSpring.cs" />
     <Compile Include="Assets\Scripts\TeleportTrigger.cs" />
     <Compile Include="Assets\Scripts\Player\LadderMovement.cs" />
     <Compile Include="Assets\Scripts\Collector.cs" />
     <Compile Include="Assets\Scripts\Ladder\LadderScript.cs" />
     <Compile Include="Assets\Scripts\MovingPlatform.cs" />
-    <Compile Include="Assets\Scripts\Health.cs" />
+    <Compile Include="Assets\EZ-Camera-Shake-Unity-master\Assets\EZ Camera Shake\Scripts\CameraShaker.cs" />
+    <Compile Include="Assets\CameraShakeFX\Scripts\TraumaInducer.cs" />
+    <Compile Include="Assets\CameraShakeFX\Scripts\StressReceiver.cs" />
+    <Compile Include="Assets\EZ-Camera-Shake-Unity-master\Assets\EZ Camera Shake\Scripts\Utilities\CameraUtilities.cs" />
+    <Compile Include="Assets\EZ-Camera-Shake-Unity-master\Assets\EZ Camera Shake\Scripts\CameraShakePresets.cs" />
+    <Compile Include="Assets\EZ-Camera-Shake-Unity-master\Assets\EZ Camera Shake\Scripts\CameraShakeInstance.cs" />
+    <Compile Include="Assets\Credits.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Kenney\Particle samples\License.txt" />
+     <None Include="Assets\EZ-Camera-Shake-Unity-master\ProjectSettings\ProjectVersion.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.3f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
