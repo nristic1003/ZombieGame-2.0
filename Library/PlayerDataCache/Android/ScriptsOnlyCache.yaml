@@ -13,6 +13,7 @@ ScriptsOnlyBuild:
     - GameController
     - Gun
     - Joystick
+    - JoystickJump
     - JoystickMoving
     - JumpingSpring
     - LadderMovement
@@ -186,6 +187,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1694}
     - Class: 114
+      Script: {instanceID: 1722}
+    - Class: 114
       Script: {instanceID: 1888}
     - Class: 114
       Script: {instanceID: 2024}
@@ -258,7 +261,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5378}
     - Class: 114
-      Script: {instanceID: 22738}
+      Script: {instanceID: 17814}
+    - Class: 114
+      Script: {instanceID: 19262}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -280,6 +285,8 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 225
       Script: {instanceID: 0}
     - Class: 1971053207
       Script: {instanceID: 0}
@@ -1347,6 +1354,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MovingPlatform
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: JoystickJump
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

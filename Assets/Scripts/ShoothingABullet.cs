@@ -14,6 +14,11 @@ public class ShoothingABullet : MonoBehaviour
 
     }
 
+    public void setScale(Vector3 f)
+    {
+        transform.localScale = f;
+    }
+
     // Update is called once per frame
     void Update()
     {

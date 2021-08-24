@@ -62,7 +62,7 @@ public class GameController : MonoBehaviour
 
     public void GameOver()
     {
-        Time.timeScale = 0f;
+        
         gameOverPanel.SetActive(true);
         GameObject.Find("Pause Button").SetActive(false);
         pausePanel.SetActive(false);
@@ -93,10 +93,10 @@ public class GameController : MonoBehaviour
         playerHealth.text = ""+ health + "%";
     }
 
-    public void jump()
+/*    public void jump()
     {
         GameObject.Find("Player").GetComponent<PlayerMovement>().checkJumping();
-    }
+    }*/
 
     public void startClimbing()
     {

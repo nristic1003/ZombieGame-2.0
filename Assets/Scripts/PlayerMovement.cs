@@ -24,6 +24,12 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask whatIsLadder;
     public float distance;
     private bool isClimbing;
+
+    public void clearJumping()
+    {
+        jumpRequest = false;
+    }
+
     private bool left, right;
 
     private bool jumpRequest = false;
@@ -102,9 +108,9 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    public void checkJumping()
+    public void checkJumping(bool res)
     {
-        jumpRequest = true;
+        jumpRequest = res;
     }
 
     private void OnCollisionExit2D(Collision2D target)

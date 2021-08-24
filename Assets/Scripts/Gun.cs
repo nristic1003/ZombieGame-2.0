@@ -30,6 +30,8 @@ public class Gun : MonoBehaviour
         yield return new WaitForSeconds(Random.RandomRange(1, 3));
         GameObject bull =  Instantiate(bullet, myChild.position, Quaternion.identity);
         bull.GetComponent<ShoothingABullet>().dirrection = dir;
+        bull.GetComponent<ShoothingABullet>().setScale(transform.localScale);
+
         StartCoroutine(ShoothingABullet());
     }
 

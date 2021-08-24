@@ -5,10 +5,12 @@ using UnityEngine.EventSystems;
 public class Joystick : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 {
 	private PlayerAttack player;
+	
 
 	void Start()
 	{
 		player = GameObject.Find("Player").GetComponent<PlayerAttack>();
+
 	}
 
 	public void OnPointerDown(PointerEventData data)

@@ -15,22 +15,28 @@ public class JoystickMoving : MonoBehaviour, IPointerUpHandler, IPointerDownHand
 
 	public void OnPointerDown(PointerEventData data)
 	{
-		if (gameObject.name == "Left")
-		{
-			player.setDirrection(true);
+
+		switch(gameObject.name)
+        {
+			case "Left": 
+				player.setDirrection(true);
+			break;
+			case "Right":
+				player.setDirrection(false);
+			break;
+			case "UpButton":
+				ladder.setDirrection(true);
+			break;
+			case "DownButton":
+				ladder.setDirrection(false);
+			break;
+			case "JUMP":
+				player.checkJumping(true);
+			break;
+
 		}
-		else if(gameObject.name=="Right")
-		{
-			player.setDirrection(false);
-		}
-		else if (gameObject.name == "UpButton")
-		{
-			ladder.setDirrection(true);
-		}
-		else
-		{
-			ladder.setDirrection(false);
-		}
+
+	
 	}
 
 	public void OnPointerUp(PointerEventData data)

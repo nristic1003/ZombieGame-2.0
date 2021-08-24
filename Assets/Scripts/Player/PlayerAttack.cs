@@ -13,7 +13,7 @@ public class PlayerAttack : MonoBehaviour
 
     public ShoothingABullet bullet;
 
-    private float timeBetweenAttack = 1f;
+    private float timeBetweenAttack = 1.5f;
     public float startTime;
 
     private AudioSource source;
@@ -62,11 +62,15 @@ public class PlayerAttack : MonoBehaviour
                 {
                     ShoothingABullet clone = Instantiate(bullet, new Vector3(transform.position.x + 1f, transform.position.y - 0.35f, 0), Quaternion.identity);
                     clone.dirrection = transform.localScale.x;
-                }else
+                    clone.setScale(transform.localScale);
+                }
+                else
                 {
                     ShoothingABullet clone = Instantiate(bullet, new Vector3(transform.position.x - 1f, transform.position.y - 0.35f, 0), Quaternion.identity);
                     clone.dirrection = transform.localScale.x;
+                    clone.setScale(transform.localScale);
                 }
+
                     
                 
             }
