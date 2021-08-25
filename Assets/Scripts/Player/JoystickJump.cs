@@ -25,4 +25,6 @@ public class JoystickJump : MonoBehaviour, IPointerUpHandler, IPointerDownHandle
 	{
 		player.clearJumping();
 	}
+
+
 }

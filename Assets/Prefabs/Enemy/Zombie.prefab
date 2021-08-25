@@ -109,7 +109,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1068820213}
-  - component: {fileID: 1068820214}
+  - component: {fileID: 253057282}
+  - component: {fileID: 253057283}
   m_Layer: 6
   m_Name: Top
   m_TagString: Untagged
@@ -131,7 +132,7 @@ Transform:
   m_Father: {fileID: 2601738662294427498}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!68 &1068820214
+--- !u!68 &253057282
 EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,21 +142,32 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 6200000, guid: 102a1262abc703f49b43118c46cef911, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.06
   m_Points:
-  - {x: -0.19660091, y: -0.036899447}
-  - {x: -0.19660091, y: -0.036899447}
-  - {x: 0.09521103, y: 0.2270534}
-  - {x: 0.2737918, y: 0.04049766}
-  - {x: 0.33312225, y: -0.0009729862}
+  - {x: -0.27338934, y: -0.028520107}
+  - {x: -0.23627853, y: 0.02546072}
+  - {x: -0.022706747, y: 0.2362678}
+  - {x: 0.1747694, y: 0.13830829}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &253057283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068820212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09dc1866b3848e146a021fc0cb317e84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1569060022
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,7 +414,7 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.028520584, y: -0.32}
+  m_Offset: {x: -0.028520584, y: -0.53}
   m_Size: {x: 0.6270914, y: 1.92}
   m_Direction: 0
 --- !u!114 &1950613254
@@ -417,7 +429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed1a10d30575a6d45a27cb34dc795b40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
+  health: 8
   effect: {fileID: 3200528606768861145, guid: 86570604ae1cc344ab5a121b5cc5960d, type: 3}
   enemyHit: {fileID: 3200528606768861145, guid: 761c5ee81ba0fcc4ab6334aad061c51f, type: 3}
   coin: {fileID: 2266017383313201443, guid: fd5c383cb394fbd41ad829b66f8336fa, type: 3}
@@ -532,6 +544,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+  controller: {fileID: 0}
   distance: 1
   rightPos: {fileID: 1569060023}
   leftPos: {fileID: 218428869}

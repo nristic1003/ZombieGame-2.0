@@ -57,7 +57,6 @@ public class LadderMovement : MonoBehaviour
         climbButtons.SetActive(true);
         weaponsButtons.SetActive(false);
 
-
     }
 
     private void FixedUpdate()

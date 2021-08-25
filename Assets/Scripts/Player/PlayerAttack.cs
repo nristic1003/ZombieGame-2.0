@@ -48,7 +48,7 @@ public class PlayerAttack : MonoBehaviour
                 anim.SetBool("attack", true);
                 Collider2D[] enemies = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemy);
                 for (int i = 0; i < enemies.Length; i++)
-                    enemies[i].GetComponent<Enemy>().TakeDamage(1);
+                    enemies[i].GetComponent<Enemy>().TakeDamage(2);
 
 
             }else if (gun && numOfBullets > 0)

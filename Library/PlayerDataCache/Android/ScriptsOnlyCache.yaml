@@ -27,6 +27,7 @@ ScriptsOnlyBuild:
     - PlayerMovement
     - PlayerWalk
     - Portal
+    - RemovePlayerFromTop
     - ShoothingABullet
     - SunFollow
     - TeleportTrigger
@@ -116,13 +117,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2700}
     - Class: 114
-      Script: {instanceID: 2894}
+      Script: {instanceID: 2896}
     - Class: 114
-      Script: {instanceID: 3132}
+      Script: {instanceID: 3134}
     - Class: 114
-      Script: {instanceID: 3238}
+      Script: {instanceID: 3240}
     - Class: 114
-      Script: {instanceID: 3480}
+      Script: {instanceID: 3482}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -213,57 +214,59 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2810}
     - Class: 114
-      Script: {instanceID: 2894}
+      Script: {instanceID: 2874}
     - Class: 114
       Script: {instanceID: 2896}
     - Class: 114
-      Script: {instanceID: 2956}
+      Script: {instanceID: 2898}
     - Class: 114
-      Script: {instanceID: 3124}
+      Script: {instanceID: 2958}
     - Class: 114
-      Script: {instanceID: 3132}
+      Script: {instanceID: 3126}
     - Class: 114
-      Script: {instanceID: 3238}
+      Script: {instanceID: 3134}
     - Class: 114
-      Script: {instanceID: 3254}
+      Script: {instanceID: 3240}
     - Class: 114
-      Script: {instanceID: 3260}
+      Script: {instanceID: 3256}
     - Class: 114
-      Script: {instanceID: 3280}
+      Script: {instanceID: 3262}
     - Class: 114
-      Script: {instanceID: 3322}
+      Script: {instanceID: 3282}
     - Class: 114
-      Script: {instanceID: 3436}
+      Script: {instanceID: 3324}
     - Class: 114
-      Script: {instanceID: 3634}
+      Script: {instanceID: 3438}
     - Class: 114
-      Script: {instanceID: 3684}
+      Script: {instanceID: 3636}
     - Class: 114
-      Script: {instanceID: 3736}
+      Script: {instanceID: 3686}
     - Class: 114
-      Script: {instanceID: 3746}
+      Script: {instanceID: 3738}
     - Class: 114
-      Script: {instanceID: 4068}
+      Script: {instanceID: 3748}
     - Class: 114
-      Script: {instanceID: 4164}
+      Script: {instanceID: 4070}
     - Class: 114
-      Script: {instanceID: 4274}
+      Script: {instanceID: 4166}
     - Class: 114
-      Script: {instanceID: 4632}
+      Script: {instanceID: 4276}
     - Class: 114
-      Script: {instanceID: 4796}
+      Script: {instanceID: 4634}
     - Class: 114
-      Script: {instanceID: 5058}
+      Script: {instanceID: 4798}
     - Class: 114
-      Script: {instanceID: 5096}
+      Script: {instanceID: 5060}
     - Class: 114
-      Script: {instanceID: 5138}
+      Script: {instanceID: 5098}
     - Class: 114
-      Script: {instanceID: 5378}
+      Script: {instanceID: 5140}
     - Class: 114
-      Script: {instanceID: 17814}
+      Script: {instanceID: 5380}
     - Class: 114
-      Script: {instanceID: 19262}
+      Script: {instanceID: 17894}
+    - Class: 114
+      Script: {instanceID: 38440}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -316,13 +319,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2700}
     - Class: 114
-      Script: {instanceID: 2890}
+      Script: {instanceID: 2892}
     - Class: 114
-      Script: {instanceID: 2894}
+      Script: {instanceID: 2896}
     - Class: 114
-      Script: {instanceID: 3132}
+      Script: {instanceID: 3134}
     - Class: 114
-      Script: {instanceID: 3238}
+      Script: {instanceID: 3240}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -691,6 +694,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: JoystickJump
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestRunner.Utils
     className: TestRunCallbackListener
@@ -870,7 +879,7 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: febd633d0b8649be988590e42da6d295
+      Hash: 4faf03df2abf472888a0fcdf729b198f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyChasing
@@ -1359,7 +1368,7 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: JoystickJump
+    className: RemovePlayerFromTop
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

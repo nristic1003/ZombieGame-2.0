@@ -6,6 +6,7 @@ public class EnemyChasing : MonoBehaviour
 {
     [SerializeField]
     private float speed;
+    public CharacterController2D controller;
 
 
     public float distance = 3;
@@ -31,7 +32,7 @@ public class EnemyChasing : MonoBehaviour
         playerPosition = GameObject.FindWithTag("Player").transform;
         anim = GetComponent<Animator>();
     }
-    void FixedUpdate()
+    void Update()
     {
 
         checkTags();

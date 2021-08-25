@@ -44,14 +44,16 @@ public class ShoothingABullet : MonoBehaviour
     {
         if (collision.tag == "Enemy")
         {
-            GameObject.Find(collision.gameObject.name).GetComponent<Enemy>().TakeDamage(1);
+            int damageTaken = Random.Range(1, 5);
+            GameObject.Find(collision.gameObject.name).GetComponent<Enemy>().TakeDamage(damageTaken);
             Destroy(gameObject);
          
         }
 
         if (collision.tag == "Player")
         {
-            GameObject.Find(collision.gameObject.name).GetComponent<Player>().TakeDamage(10);
+            int damageTaken = Random.Range(5, 15);
+            GameObject.Find(collision.gameObject.name).GetComponent<Player>().TakeDamage(damageTaken);
             Destroy(gameObject);
 
         }

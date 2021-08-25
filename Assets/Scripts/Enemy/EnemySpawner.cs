@@ -10,6 +10,7 @@ public class EnemySpawner : MonoBehaviour
     public float timePassed;
     public float offsetDistance;
     public Transform playerPosition;
+    public static int num = 1;
 
     void Start()
     {
@@ -27,7 +28,9 @@ public class EnemySpawner : MonoBehaviour
     {
         playerPosition = GameObject.FindWithTag("Player").transform;
         Vector3 spawnPosition = new Vector3(playerPosition.position.x + offsetDistance, transform.position.y + 0.5f, transform.position.z);
-        Instantiate(zombie, spawnPosition, Quaternion.identity);
+        var x =  Instantiate(zombie, spawnPosition, Quaternion.identity);
+        x.name = "Zombie" + num++;
+
         
     }
 
