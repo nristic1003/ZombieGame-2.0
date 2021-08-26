@@ -63,21 +63,24 @@ public class LadderMovement : MonoBehaviour
     {
         if(isClimbing)
         {
-            if(up || down)
+          
+            if (up || down)
             {
                 if (up) vertical = 1f;
                 else vertical = -1f;
                 anim.speed = 1f;
                 anim.SetBool("goingUp", true);
-                
-            }else
-            {
-                
+               
+
+            }
+            else
+            {    
                 anim.speed = 0f;
                 vertical = 0f;
             }
             myBody.gravityScale = 0f;
             myBody.velocity = new Vector2(myBody.velocity.x, vertical * speed);
+
         }
         else
         {
@@ -108,6 +111,8 @@ public class LadderMovement : MonoBehaviour
             ladderButton.SetActive(false);
             climbButtons.SetActive(false);
             weaponsButtons.SetActive(true);
+            vertical = 0f;
+            clearMovong();
         }
     }
 }
