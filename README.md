@@ -1,2 +1,5 @@
 # ZombieGame-2.0
-Check this youtube video for gameplay : https://www.youtube.com/watch?v=JzxI1B53EEI&t=1s&ab_channel=NikolaRistic
+2D shooting game. You can check a gameplay video on this link:
+https://www.youtube.com/watch?v=JzxI1B53EEI&t=1s&ab_channel=NikolaRistic. Developed using Unity and C#. <br />
+In future updates, this game will get more levels, smarter enemies, and a lot of new things so stay tuned. <br />
+IOS version soon.
