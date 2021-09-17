@@ -57,9 +57,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\SawRotation.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\SunFollow.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAttack.cs" />
     <Compile Include="Assets\Scripts\Parallax.cs" />
+    <Compile Include="Assets\Scripts\BarrelControl.cs" />
     <Compile Include="Assets\Scripts\ShakeCamera.cs" />
     <Compile Include="Assets\Scripts\Player\WithParts\RippOffHead.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemySpawner.cs" />
@@ -72,6 +74,7 @@
     <Compile Include="Assets\Scripts\Controllers\MainMenuController.cs" />
     <Compile Include="Assets\Scripts\ShoothingABullet.cs" />
     <Compile Include="Assets\Scripts\Player\Player.cs" />
+    <Compile Include="Assets\Scripts\BarrelSpawner.cs" />
     <Compile Include="Assets\CameraShakeFX\Scripts\StressReceiver.cs" />
     <Compile Include="Assets\Scripts\Portal.cs" />
     <Compile Include="Assets\Scripts\CharacterController2D.cs" />
@@ -79,6 +82,7 @@
     <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyChasing.cs" />
     <Compile Include="Assets\Credits.cs" />
+    <Compile Include="Assets\Scripts\MowingSaw.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Controllers\GameController.cs" />
     <Compile Include="Assets\Scripts\Player\WithParts\PlayerParts.cs" />
@@ -91,14 +95,14 @@
     <Compile Include="Assets\Scripts\JumpingSpring.cs" />
     <Compile Include="Assets\CameraShakeFX\Scripts\TraumaInducer.cs" />
     <Compile Include="Assets\Scripts\TeleportTrigger.cs" />
+    <Compile Include="Assets\Scripts\MoveTestera.cs" />
     <Compile Include="Assets\Scripts\Player\LadderMovement.cs" />
     <Compile Include="Assets\EZ-Camera-Shake-Unity-master\Assets\EZ Camera Shake\Scripts\CameraShakePresets.cs" />
     <Compile Include="Assets\Scripts\Collector.cs" />
     <Compile Include="Assets\Scripts\Ladder\LadderScript.cs" />
-    <Compile Include="Assets\Scripts\MovingPlatform.cs" />
-    <Compile Include="Assets\Scripts\SawRotation.cs" />
     <Compile Include="Assets\Scripts\StartCutscene.cs" />
-    <Compile Include="Assets\Scripts\MoveTestera.cs" />
+    <Compile Include="Assets\Scripts\MovingPlatform.cs" />
+    <Compile Include="Assets\Scripts\SnowBallMovement.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Kenney\Particle samples\License.txt" />

@@ -32,7 +32,15 @@ public class SawRotation : MonoBehaviour
     {
         if(collision.tag=="Player")
         {
-            Debug.Log("da");
+            if(gameObject.tag=="malaTestera")
+            {
+                GameObject.Find("Player").GetComponent<Player>().TakeDamage(15);
+            }
+            if(gameObject.name=="VelikaTestera")
+            {
+                GameObject.Find("Player").GetComponent<Player>().TakeDamage(100);
+            }
+        
         }
     }
 }

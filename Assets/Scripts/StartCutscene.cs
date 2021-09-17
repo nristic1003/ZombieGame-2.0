@@ -15,15 +15,15 @@ public class StartCutscene : MonoBehaviour
            
             cutSceneOn = true;
             cam.SetBool("cutscene1" , true);
-            GameObject.Find("testera").GetComponent<Animator>().SetBool("fadeIn", true);
+            GameObject.Find("VelikaTestera").GetComponent<Animator>().SetBool("fadeIn", true);
             Invoke(nameof(stopCutScene), 3f);
         }
     }
 
     void stopCutScene()
     {
-        GameObject.Find("testera").GetComponent<SawRotation>().moveForward = true;
-        GameObject.Find("testera").GetComponent<Animator>().SetBool("moveRight", true);
+        GameObject.Find("VelikaTestera").GetComponent<SawRotation>().moveForward = true;
+        GameObject.Find("VelikaTestera").GetComponent<Animator>().SetBool("moveRight", true);
         cutSceneOn = false;
         cam.SetBool("cutscene1", false);
         Destroy(gameObject);
