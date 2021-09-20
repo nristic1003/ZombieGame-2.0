@@ -32,6 +32,13 @@ public class GameController : MonoBehaviour
 
     }
 
+    private void Start()
+    {
+        setScore(PlayerPrefs.GetInt("CurrentScore"));
+        increaseCoins(PlayerPrefs.GetInt("NumOfCoins"));
+    }
+
+
     public void PauseTheGame()
     {
         Time.timeScale = 0f;
@@ -65,24 +72,30 @@ public class GameController : MonoBehaviour
         
         gameOverPanel.SetActive(true);
         GameObject.Find("Pause Button").SetActive(false);
+        PlayerPrefs.SetInt("NumOfBullets", 10);
+        PlayerPrefs.SetInt("CurrentScore", 0);
+        PlayerPrefs.SetInt("NumOfCoins", 0);
         pausePanel.SetActive(false);
     }
 
     public void setScore(int count)
     {
         enemiesKilled += count;
+        PlayerPrefs.SetInt("CurrentScore", enemiesKilled);
         scoreText.text = "Score: " + enemiesKilled;
     }
 
     public void increaseCoins(int num)
     {
         coins += num;
+        PlayerPrefs.SetInt("NumOfCoins", coins);
         numOfCoins.text = "" + coins;
     }
 
     public void setNUmOfBullets(int num)
     {
         bullets = num;
+        PlayerPrefs.SetInt("NumOfBullets", bullets);
         numOfBullets.text = "x " + bullets;
     }
 
@@ -90,6 +103,7 @@ public class GameController : MonoBehaviour
     public void setHealth(int num)
     {
         health = num;
+
         playerHealth.text = ""+ health + "%";
     }
 

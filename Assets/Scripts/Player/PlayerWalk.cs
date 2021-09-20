@@ -71,35 +71,6 @@ public class PlayerWalk : MonoBehaviour
 
     }
 
-    /* void checkGoUp()
-     {
-         if (canGoUp)
-         {
-
-             float l = Input.GetAxisRaw("Vertical");
-             Vector2 temp = transform.position;
-             if (l == 1)
-             {
-                 myBody.isKinematic = true;
-                 anim.SetBool("Up", true);
-                 temp.y += 5f * Time.deltaTime;
-                 transform.position = temp;
-             }
-             else if (l == -1 && !grounded)
-             {
-                 myBody.isKinematic = true;
-                 anim.Play("GoDown");
-                 temp.y -= 5f * Time.deltaTime;
-                 transform.position = temp;
-             }
-
-         }
-         else
-         {
-             myBody.isKinematic = false;
-         }
-
-     }*/
 
 
     private void FixedUpdate()
@@ -159,8 +130,6 @@ public class PlayerWalk : MonoBehaviour
             canJump = false;
         }
 
-
-
     }
 
     private void OnCollisionEnter2D(Collision2D target)
@@ -170,6 +139,7 @@ public class PlayerWalk : MonoBehaviour
             canJump = true;
             grounded = true;
             anim.SetBool("jump", false);
+           
         }
     }
     private void OnCollisionExit2D(Collision2D target)
@@ -177,6 +147,7 @@ public class PlayerWalk : MonoBehaviour
         if (target.gameObject.tag == "Ground")
         {
             grounded = false;
+          
         }
     }
 

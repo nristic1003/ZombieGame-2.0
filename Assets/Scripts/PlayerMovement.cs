@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -42,18 +42,29 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (left)
-            horizontalMove = -1f * runSpeed;
-        else if (right) horizontalMove = 1f * runSpeed;
-        else horizontalMove = 0f * runSpeed;
-        // verticalMove =Input.GetAxisRaw("Vertical") * climbingSpeed;
-        anim.SetFloat("speed", Mathf.Abs(horizontalMove));
-        if(jumpRequest)
+        // funkcija Update se poziva uvek pre, i dosta česće u odnosu na funckiju FixedUpdate. Pored toga se poziva za svaki frejm,
+        // pa se ovde koristi da pripremi parametre potrebne funckiji FixedUpdate u kojoj će se izvršiti potrebne radnje 
+        if (left)    //left ukoliko je igač priticnuo dugme za kretannje levo
+            horizontalMove = -1f * runSpeed; //brzina koja će se primeniti na igrača
+        else if (right)   //right ukoliko je igač priticnuo dugme za kretannje desno
+            horizontalMove = 1f * runSpeed; //brzina koja će se primeniti na igrača
+        else horizontalMove = 0f * runSpeed; //nije pritisnuto dugme -: brzina = 0
+        anim.SetFloat("speed", Mathf.Abs(horizontalMove)); //uslov kojim se manipuliše da bi se prešlo u stanje kretanja (Player Walking)
+        if(jumpRequest) //provera da li je pritisnuto dugme za skok
         {
-            jump = true;
-            anim.SetBool("isJumping", true);
+            jump = true; //flag da će doći do skoka
+            anim.SetBool("isJumping", true); //uslov kojim se manipuliše da bi se desila tranzicija između stanja (Jump)
         }
+    }
 
+    private void FixedUpdate()
+    {
+        //Move our character
+        //funkcija FixedUpdate se koristi za rad sa fizikom unutar igre, pa se u ovom konkretnom slučaju koristi za kretanje samog igrača, i skakanje
+        controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump); //poziv funkcije za kretanje karaktera, prvi parametar = kretanje,
+                                                                            //drugi parametar = crouch, treci parametar = skok
+        jump = false; //resetovanje parametara za skok
+        jumpRequest = false; //resetovanje parametra za zahtev skoka
     }
 
     public void setDirrection(bool v)
@@ -73,23 +84,13 @@ public class PlayerMovement : MonoBehaviour
       //  anim.SetBool("isJumping", false);
     } 
 
-    private void FixedUpdate()
-    {
-        //Move our character
-        controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
-        jump = false;
-        jumpRequest = false;
 
-    }
 
     public void bouncePlayer(float jumpForce)
     {
-
-        myBody.velocity = new Vector2(0, jumpForce);
+        myBody.velocity = new Vector2(0, jumpForce); 
         anim.SetBool("isJumping", true);
         anim.SetBool("goingUp", false);
-        
-
     }
 
     private void OnCollisionEnter2D(Collision2D target)

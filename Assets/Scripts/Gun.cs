@@ -20,19 +20,16 @@ public class Gun : MonoBehaviour
 
     private void Start()
     {
-      
-        StartCoroutine(ShoothingABullet());
+        StartCoroutine(ShoothingABullet()); //pocetni poziv funkcije ShoothingABullet prilkom kreiranja objekta
     }
 
-
-    IEnumerator ShoothingABullet()
+    IEnumerator ShoothingABullet() //deo koda koji rai kao posebna nit
     {
-        yield return new WaitForSeconds(Random.RandomRange(1, 3));
-        GameObject bull =  Instantiate(bullet, myChild.position, Quaternion.identity);
-        bull.GetComponent<ShoothingABullet>().dirrection = dir;
-        bull.GetComponent<ShoothingABullet>().setScale(transform.localScale);
-
-        StartCoroutine(ShoothingABullet());
+        yield return new WaitForSeconds(Random.RandomRange(1, 3));// nakon koliko vremena se poziva ova fukcija ponovo [1,3] sekundi
+        GameObject bull =  Instantiate(bullet, myChild.position, Quaternion.identity); //kreiranje objekta metka
+        bull.GetComponent<ShoothingABullet>().dirrection = dir; //podesavanje smera metka
+        bull.GetComponent<ShoothingABullet>().setScale(transform.localScale); //podesavanje velicina metka
+        StartCoroutine(ShoothingABullet()); //ponovni poziv funkcije, (ne kreira se rekurzija)
     }
 
 

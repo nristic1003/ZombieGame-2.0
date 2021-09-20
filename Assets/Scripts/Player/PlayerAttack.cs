@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,6 +18,9 @@ public class PlayerAttack : MonoBehaviour
 
     private AudioSource source;
     public AudioClip shoothing, collectingCoin;
+    public bool grounded = true;
+
+
 
     private bool canShoot = true;
     [SerializeField]
@@ -34,7 +37,8 @@ public class PlayerAttack : MonoBehaviour
 
     private void Start()
     {
-        GameController.gameManager.setNUmOfBullets(numOfBullets);
+        GameController.gameManager.setNUmOfBullets(PlayerPrefs.GetInt("NumOfBullets"));
+        numOfBullets = PlayerPrefs.GetInt("NumOfBullets");
     }
 
     // Update is called once per frame
@@ -51,28 +55,27 @@ public class PlayerAttack : MonoBehaviour
                     enemies[i].GetComponent<Enemy>().TakeDamage(2);
 
 
-            }else if (gun && numOfBullets > 0)
+            }else if (gun && numOfBullets > 0) // do korišćenja oružja dolazi samo ako glavni karakter ima oružje, i ima bar jedan metak
             {
-                numOfBullets--;
-                GameController.gameManager.setNUmOfBullets(numOfBullets);
-                anim.SetBool("shoot", true);
-                source.clip = shoothing;
-                source.Play();
-                if(transform.localScale.x ==1)
+                numOfBullets--; //broj preostale municije
+                GameController.gameManager.setNUmOfBullets(numOfBullets); //čuvanje trenutnog broja preostale municije globalno za korišćenje u drugim nivoima
+                anim.SetBool("shoot", true); //podešavanje parametra shoot na true da bi se ispunio uslov za tranziciju u Attack stanje
+                source.clip = shoothing; //postavljanje odredjenog zvuka koji će se reprodukovati 
+                source.Play(); //reprodukavnje zvuka
+                if(transform.localScale.x ==1) //provera na koju stranu je okrenut igrač 1==DESNO, -1==LEVO
                 {
-                    ShoothingABullet clone = Instantiate(bullet, new Vector3(transform.position.x + 1f, transform.position.y - 0.35f, 0), Quaternion.identity);
-                    clone.dirrection = transform.localScale.x;
-                    clone.setScale(transform.localScale);
+                    //DESNO
+                    ShoothingABullet clone = Instantiate(bullet, new Vector3(transform.position.x + 1f, transform.position.y - 0.35f, 0), Quaternion.identity); //kreiranje metka koji će biti iskorišćen
+                    clone.dirrection = transform.localScale.x; //podešavanje pravca metka -- kreće se desno
+                    clone.setScale(transform.localScale);  //podešavanje veličine metka
                 }
                 else
                 {
-                    ShoothingABullet clone = Instantiate(bullet, new Vector3(transform.position.x - 1f, transform.position.y - 0.35f, 0), Quaternion.identity);
-                    clone.dirrection = transform.localScale.x;
-                    clone.setScale(transform.localScale);
-                }
-
-                    
-                
+                    //LEVO
+                    ShoothingABullet clone = Instantiate(bullet, new Vector3(transform.position.x - 1f, transform.position.y - 0.35f, 0), Quaternion.identity); //kreiranje metka koji će biti iskorišćen
+                    clone.dirrection = transform.localScale.x; //podešavanje pravca metka -- kreće se levo
+                    clone.setScale(transform.localScale); //podešavanje veličine metka
+                }         
             }
             else
             {

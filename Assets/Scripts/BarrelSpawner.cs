@@ -15,7 +15,7 @@ public class BarrelSpawner : MonoBehaviour
 
     IEnumerator SpawnBarrel()
     {
-        float range = Random.Range(2, 5);
+        float range = Random.Range(2, 4);
         yield return new WaitForSeconds(range);
         Instantiate(barrel, transform.position, Quaternion.identity);
         StartCoroutine("SpawnBarrel");
@@ -28,9 +28,7 @@ public class BarrelSpawner : MonoBehaviour
         {
             StartCoroutine("SpawnBarrel");
             BarrelControl.barrelControl = true;
-        }
-         
-       
+        }       
     }
 
     public void StopBarrels()

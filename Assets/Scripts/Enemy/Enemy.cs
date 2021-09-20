@@ -30,8 +30,6 @@ public class Enemy : MonoBehaviour
             {
                 Instantiate(newBullets, transform.position, Quaternion.identity);
             }
-           /* source.clip = clip;
-            source.Play();*/
             Instantiate(effect, transform.position, Quaternion.identity);
             Instantiate(coin, transform.position, Quaternion.identity);
             GameController.gameManager.setScore(1);
