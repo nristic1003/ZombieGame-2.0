@@ -114,13 +114,10 @@ public class PlayerWalk : MonoBehaviour
     public void checkJumping()
     {
 
-        if (myBody.velocity.y < 0)
+        if (myBody.velocity.y < 0) //ukoliko se igra? nalazi u vazduhu i pada na njegovo telo treba dodati brzinu kako bi se stekao utisak da brže pada
         {
-            myBody.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
-        }else if(myBody.velocity.y > 0  && !Input.GetKeyDown(KeyCode.Space))
-        {
-            myBody.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
-            Debug.Log("da");
+            //ukoliko ovo ne bismo uradili ovde igrac bi istom brzinom skakao i padao, i ne bi se dobio efekat uticaja gravitacije na njegovo telo
+            myBody.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime; //dodavanje brzine telu igra?a za brži pad 
         }
 
         if (canJump)

@@ -65,14 +65,16 @@ public class PlayerAttack : MonoBehaviour
                 if(transform.localScale.x ==1) //provera na koju stranu je okrenut igrač 1==DESNO, -1==LEVO
                 {
                     //DESNO
-                    ShoothingABullet clone = Instantiate(bullet, new Vector3(transform.position.x + 1f, transform.position.y - 0.35f, 0), Quaternion.identity); //kreiranje metka koji će biti iskorišćen
+                    ShoothingABullet clone = Instantiate(bullet, new Vector3(transform.position.x + 1f, transform.position.y - 0.35f, 0), Quaternion.identity);
+                    //kreiranje metka koji će biti iskorišćen
                     clone.dirrection = transform.localScale.x; //podešavanje pravca metka -- kreće se desno
                     clone.setScale(transform.localScale);  //podešavanje veličine metka
                 }
                 else
                 {
                     //LEVO
-                    ShoothingABullet clone = Instantiate(bullet, new Vector3(transform.position.x - 1f, transform.position.y - 0.35f, 0), Quaternion.identity); //kreiranje metka koji će biti iskorišćen
+                    ShoothingABullet clone = Instantiate(bullet, new Vector3(transform.position.x - 1f, transform.position.y - 0.35f, 0), Quaternion.identity);
+                    //kreiranje metka koji će biti iskorišćen
                     clone.dirrection = transform.localScale.x; //podešavanje pravca metka -- kreće se levo
                     clone.setScale(transform.localScale); //podešavanje veličine metka
                 }         
