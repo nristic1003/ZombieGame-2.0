@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -38,19 +38,17 @@ public class MovingPlatform : MonoBehaviour
         }
         else
         {
-            if (transform.position.y <= pos1.position.y)
+           if (transform.position.y <= pos1.position.y) //provera da li je trenutna pozicija platforme <=krajnjoj poziciji platforme
             {
-                nextPos = pos2.position;
-
+                nextPos = pos2.position; //pozicija do koje treba doći
             }
             if (transform.position.y>= pos2.position.y)
             {
                 nextPos = pos1.position;
             }
         }
-     
-
-        transform.position = Vector3.MoveTowards(transform.position, new Vector3(nextPos.x, nextPos.y, 0) , speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, new Vector3(nextPos.x, nextPos.y, 0) , speed * Time.deltaTime); 
+                //funkcija koja menja poziciju platforme ka datoj poziciji odredjenom brzinom
 
     }
 
